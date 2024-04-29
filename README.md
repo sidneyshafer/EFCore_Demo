@@ -3,7 +3,7 @@
 * [LINQ Query Methods](#linq-query-methods)
 * [Projections](#projections)
 * [IQueryable](#iqueryable)
-* CodingWiki Application Details
+* [CodingWiki EF Core Details](#codingwiki-ef-core-details)
 
 ## Entity Framework Core Overview
 
@@ -102,3 +102,7 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 *	IQueryable interface inherits from IEnumerable.
 *	Anything you do with IEnumerable can be done with IQueryable.
 *	For example, when using IEnumerable in a query to retrieve a list of filtered records, the records are returned by the database and then filter is applied in memory (on client side). When using IQuerable in a query to retrieve a list of filtered records, the database filters and returns the records.
+
+[Back to Top](#codingwiki-project) :arrow_up:
+----
+## CodingWiki EF Core Details
