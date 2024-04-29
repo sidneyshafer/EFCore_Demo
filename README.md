@@ -130,18 +130,18 @@ NuGet package in **CodingWiki_Web** project.
 **Add DbContext Class**
 *	Create a DbContext class to work with EF Core and interact with database tables.
 *	Create the **ApplicationDbContext** class that inherits from DbContext in the **CodingWiki_DataAccess** project.
+	   * DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
   ```csharp
   public class ApplicationDbContext : DbContext
   ```
-      * DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
 *	Create DbSet in ApplicationDbContext class.
+      * DbSet represents the classes (or models) of the tables we want in our application.
   ```csharp
   public DbSet<Book> Books { get; set; }
   ```
-      * DbSet represents the classes (or models) of the tables we want in our application.
 
 **Configure A Connection String**
-*	Override the OnConfiguring method of the DbContext class.
+Override the OnConfiguring method of the DbContext class.
   ```csharp
   protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
   {
@@ -156,13 +156,13 @@ NuGet package in **CodingWiki_Web** project.
   ```csharp
   Add-Migration AddBookToDb
   ```
-*	*Migration files can be found under the project **Migrations** folder.*
+*Migration files can be found under the project **Migrations** folder.*
 
 **Create Database and Apply Migration**
-*	Create a new database and add migration by running `Update-Database` command in the NuGet Package Manager Console.
+Create a new database and add migration by running `Update-Database` command in the NuGet Package Manager Console.
 
 **Remove Migration**
-*	If you have not pushed a migration to the database, you can use the `Remove-Migration` command to remove it.
+If you have not pushed a migration to the database, you can use the `Remove-Migration` command to remove it.
 
 **Remove a Class/Table from Db**
 *Good practice to never remove migration files directly from the Migrations folder in Solution Explorer. Always make changes in the application models or DbContext.*
