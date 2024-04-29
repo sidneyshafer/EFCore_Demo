@@ -69,7 +69,6 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 | [NotMapped] |	System.ComponentModel.DataAnnotations.Schema | Property should not be added as a new column |
 
 **Common Migration Commands**
-| --- | --- |
 | Add-Migration [MigrationName] |	Add a new migration. |
 | Update-Database [MigrationName] |	Update the database. Can include an optional migration name after the command to update the database based on a certain migration. |
 | Get-Migration |	Returns a table (id, name, safeName, and applied) of all migration files. |
@@ -78,7 +77,6 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 ## LINQ Query Methods
 
 **Common Methods**
-| --- | --- |
 | First() |	Retrieves the first element of a sequence that satisfies a specified condition. Throws an exception if no matching element is found in the sequence. |
 | FirstOrDefault() |	Retrieves the first element of a sequence that satisfies a specified condition, or a default value (usually ‘null’) if no such element is found. |
 | Where() |	Retrieves all elements from a sequence that satisfy the specified condition. |
