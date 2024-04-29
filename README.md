@@ -1,8 +1,8 @@
 # CodingWiki Project
-* [Entity Framework Core Overview](entity-framework-core-overview)
-* [LINQ Query Methods](lINQ-query-methods)
-* Projections
-* IQueryable
+* [Entity Framework Core Overview](#entity-framework-core-overview)
+* [LINQ Query Methods](#linq-query-methods)
+* [Projections](#projections)
+* [IQueryable](#iqueryable)
 * CodingWiki Application Details
 
 ## Entity Framework Core Overview
