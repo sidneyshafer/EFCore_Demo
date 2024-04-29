@@ -132,12 +132,12 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
   ```csharp
   public class ApplicationDbContext : DbContext
   ```
-  -	DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
+   * DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
 *	Create DbSet in ApplicationDbContext class.
   ```csharp
   public DbSet<Book> Books { get; set; }
   ```
-  -	DbSet represents the classes (or models) of the tables we want in our application.
+   * DbSet represents the classes (or models) of the tables we want in our application.
 
 **Configure A Connection String**
 *	Override the OnConfiguring method of the DbContext class.
