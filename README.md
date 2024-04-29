@@ -98,7 +98,8 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 
 ----
 ## Projections
-* Projection is a way of converting an entity into a C# class with a subset of those properties.
+
+Projection is a way of converting an entity into a C# class with a subset of those properties.
 
 ## IQueryable
 *	IQueryable interface inherits from IEnumerable.
@@ -114,12 +115,12 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 * [Relations](#relations)
 
 ### NuGet Packages
-*	EF Core NuGet packages used in **CodingWiki_DataAccess** project.
+EF Core NuGet packages used in **CodingWiki_DataAccess** project.
   ```csharp
   Microsoft.EntityFrameworkCore.SQLServer
   Microsoft.EntityFrameworkCore.Tools
   ```
-*	NuGet package in **CodingWiki_Web** project.
+NuGet package in **CodingWiki_Web** project.
   ```csharp
  	Microsoft.EntityFrameworkCore.Design
   ```
@@ -132,12 +133,12 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
   ```csharp
   public class ApplicationDbContext : DbContext
   ```
-   * DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
+      * DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
 *	Create DbSet in ApplicationDbContext class.
   ```csharp
   public DbSet<Book> Books { get; set; }
   ```
-   * DbSet represents the classes (or models) of the tables we want in our application.
+      * DbSet represents the classes (or models) of the tables we want in our application.
 
 **Configure A Connection String**
 *	Override the OnConfiguring method of the DbContext class.
