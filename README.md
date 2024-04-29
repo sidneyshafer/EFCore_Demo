@@ -76,6 +76,7 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 | Get-Migration |	Returns a table (id, name, safeName, and applied) of all migration files. |
 | Drop-Database |	Delete the database. Use the `Update-Database` command to revert drop command. |
 
+----
 ## LINQ Query Methods
 
 **Common Methods**
@@ -95,6 +96,7 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 | ThenByDescending() |	Performs a secondary sort on elements of a sequence that have already been ordered by a primary sort key, in descending order (typically used after an initial `OrderBy()`). |
 | Skip() and Take() |	Used to implement paging or portioning data.<br />**Skip():** skips a specified number of elements in a sequence and returns the remaining elements.<br />**Take():** returns a specified number of contiguous elements from a sequence starting from the beginning. |
 
+----
 ## Projections
 * Projection is a way of converting an entity into a C# class with a subset of those properties.
 
@@ -104,5 +106,18 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 *	For example, when using IEnumerable in a query to retrieve a list of filtered records, the records are returned by the database and then filter is applied in memory (on client side). When using IQuerable in a query to retrieve a list of filtered records, the database filters and returns the records.
 
 [Back to Top](#codingwiki-project) :arrow_up:
+
 ----
 ## CodingWiki EF Core Details
+* [NuGet Packages](#nuget-packages)
+
+NuGet Packages
+*	EF Core NuGet packages used in CodingWiki_DataAccess project.
+  ```c#
+  Microsoft.EntityFrameworkCore.SQLServer
+  Microsoft.EntityFrameworkCore.Tools
+  ```
+*	NuGet package in CodingWiki_Web project.
+  ```c#
+ 	Microsoft.EntityFrameworkCore.Design
+  ```
