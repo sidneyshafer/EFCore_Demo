@@ -1,0 +1,17 @@
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\bin\Debug\net7.0\CodingWiki_DataAccess.deps.json
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\bin\Debug\net7.0\CodingWiki_DataAccess.runtimeconfig.json
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\bin\Debug\net7.0\CodingWiki_DataAccess.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\bin\Debug\net7.0\CodingWiki_DataAccess.pdb
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\bin\Debug\net7.0\CodingWiki_Model.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\bin\Debug\net7.0\CodingWiki_Model.pdb
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.csproj.AssemblyReference.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.AssemblyInfoInputs.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.AssemblyInfo.cs
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.csproj.CopyComplete
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\refint\CodingWiki_DataAccess.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.pdb
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.genruntimeconfig.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\ref\CodingWiki_DataAccess.dll

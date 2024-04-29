@@ -1,0 +1,12 @@
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\bin\Debug\net7.0\CodingWiki_Model.deps.json
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\bin\Debug\net7.0\CodingWiki_Model.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\bin\Debug\net7.0\CodingWiki_Model.pdb
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.csproj.AssemblyReference.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.AssemblyInfoInputs.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.AssemblyInfo.cs
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.csproj.CoreCompileInputs.cache
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\refint\CodingWiki_Model.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.pdb
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\ref\CodingWiki_Model.dll
