@@ -113,11 +113,11 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 
 NuGet Packages
 *	EF Core NuGet packages used in CodingWiki_DataAccess project.
-  ```c#
+  ```csharp
   Microsoft.EntityFrameworkCore.SQLServer
   Microsoft.EntityFrameworkCore.Tools
   ```
 *	NuGet package in CodingWiki_Web project.
-  ```c#
+  ```csharp
  	Microsoft.EntityFrameworkCore.Design
   ```
