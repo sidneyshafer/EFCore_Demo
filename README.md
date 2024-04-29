@@ -110,14 +110,72 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 ----
 ## CodingWiki EF Core Details
 * [NuGet Packages](#nuget-packages)
+* [Db Context and Migrations](#db-context-and-migrations)
+* [Relations](#relations)
 
-NuGet Packages
-*	EF Core NuGet packages used in CodingWiki_DataAccess project.
+### NuGet Packages
+*	EF Core NuGet packages used in **CodingWiki_DataAccess** project.
   ```csharp
   Microsoft.EntityFrameworkCore.SQLServer
   Microsoft.EntityFrameworkCore.Tools
   ```
-*	NuGet package in CodingWiki_Web project.
+*	NuGet package in **CodingWiki_Web** project.
   ```csharp
  	Microsoft.EntityFrameworkCore.Design
   ```
+
+### Db Context and Migrations
+
+**Add DbContext Class**
+*	Create a DbContext class to work with EF Core and interact with database tables.
+*	Create the **ApplicationDbContext** class that inherits from DbContext in the **CodingWiki_DataAccess** project.
+  ```csharp
+  public class ApplicationDbContext : DbContext
+  ```
+  -	DbContext is responsible for providing all the logic needed for working with EF Core (e.g. creating, retrieving, updating, or deleting data from a database).
+*	Create DbSet in ApplicationDbContext class.
+  ```csharp
+  public DbSet<Book> Books { get; set; }
+  ```
+  -	DbSet represents the classes (or models) of the tables we want in our application.
+
+**Configure A Connection String**
+*	Override the OnConfiguring method of the DbContext class.
+  ```csharp
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+      optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CodingWiki;TrustServerCertificate=True;Trusted_Connection:True;");
+  }
+  ```
+
+**Add Migrations**
+*	Right click CodingWiki_DataAccess project and select **Set as Startup Project**.
+*	Open the Package Manager Console and set the default project to CodingWiki_DataAccess.
+*	Add a new migration.
+  ```csharp
+  Add-Migration AddBookToDb
+  ```
+*	*Migration files can be found under the project **Migrations** folder.*
+
+**Create Database and Apply Migration**
+*	Create a new database and add migration by running `Update-Database` command in the NuGet Package Manager Console.
+
+**Remove Migration**
+*	If you have not pushed a migration to the database, you can use the `Remove-Migration` command to remove it.
+
+**Remove a Class/Table from Db**
+*Good practice to never remove migration files directly from the Migrations folder in Solution Explorer. Always make changes in the application models or DbContext.*
+1. Navigate to application DbContext and remove the previously defined DbSet.
+2. Add a new migration (EF Core will see the DbSet has been removed and it will drop table from database).
+3. Update the database.
+
+**Rolling Back to Old Migrations**
+*	In the Package Manager Console window, update the database followed by the name of migration you want to roll back too.
+  ```csharp
+  Update-Database AddCategoryToDb
+  ```
+*	Used for development (not production). Tables/data may be deleted with migration roll back.
+*	To revert to the latest migration version, run the `Update-Database` command.
+
+----
+### Relations
