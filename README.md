@@ -11,9 +11,9 @@ Entity Framework Core is a Cross-Platform, Open-Source Object Relational Mapper 
 
 **What is ORM?**
 *	ORM stands for Object to Relational Mapping
-  -	**Object:** classes that we create in our programming language (C#, Java, Python etc.)
-  -	**Relational:** the Relational Database Management System like MS-SQL, MySQL etc.
-  -	**Mapping:** the part which bridges objects and database tables.
+    *	**Object:** classes that we create in our programming language (C#, Java, Python etc.)
+    *	**Relational:** the Relational Database Management System like MS-SQL, MySQL etc.
+    *	**Mapping:** the part which bridges objects and database tables.
 *	ORM is a technique that lets you query and manipulate data from a database using an object-oriented paradigm of your preferred programming language.
 *	Typically, ORM simplifies a query. 
 *	It allows us to interact with a database using a programming language of choice, instead of SQL. 
