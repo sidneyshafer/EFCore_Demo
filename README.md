@@ -159,9 +159,11 @@ Override the OnConfiguring method of the DbContext class.
 *Migration files can be found under the project **Migrations** folder.*
 
 **Create Database and Apply Migration**
+
 Create a new database and add migration by running `Update-Database` command in the NuGet Package Manager Console.
 
 **Remove Migration**
+
 If you have not pushed a migration to the database, you can use the `Remove-Migration` command to remove it.
 
 **Remove a Class/Table from Db**
@@ -171,12 +173,12 @@ If you have not pushed a migration to the database, you can use the `Remove-Migr
 3. Update the database.
 
 **Rolling Back to Old Migrations**
-*	In the Package Manager Console window, update the database followed by the name of migration you want to roll back too.
+* In the Package Manager Console window, update the database followed by the name of migration you want to roll back too.
   ```csharp
   Update-Database AddCategoryToDb
   ```
-*	Used for development (not production). Tables/data may be deleted with migration roll back.
-*	To revert to the latest migration version, run the `Update-Database` command.
+* Used for development (not production). Tables/data may be deleted with migration roll back.
+* To revert to the latest migration version, run the `Update-Database` command.
 
 ----
 ### Relations
