@@ -258,3 +258,27 @@ Override the OnConfiguring method of the DbContext class.
 
 ----
 ### Using Fluent API
+
+CodingWiki presents the use of creating database entities using Fluent API. With this, we can define table and column names, set primary and foreign keys, specify certain column validation rules, and establish relationships between entities. The tables in this project are based off previously defined models. 
+
+**Add Fluent Models**
+*	Create fluent models that are based on the previously defined models (that use data annotation).
+	*	*Copy the following models: Author, Book, BookDetail, Publisher, and BookAuthorMap classes.*
+*	Store in a separate folder named **FluentModels** under the **Models** folder.
+*	Remove all data annotations (if applicable) in each model class.
+
+**Config Files**
+*	Create a configuration file for each entity that will contain code for working with Fluent API. 
+*	Store all config files in a folder named **FluentConfig** under the Data Access project.
+*	In the **ApplicationDbContext**, apply each configuration.
+  	```csharp
+	modelBuilder.ApplyConfiguration(new FluentAuthorConfig());
+	modelBuilder.ApplyConfiguration(new FluentBookConfig());
+	modelBuilder.ApplyConfiguration(new FluentPublisherConfig());
+	modelBuilder.ApplyConfiguration(new FluentBookDetailConfig());
+	modelBuilder.ApplyConfiguration(new FluentBookAuthorMapConfig());
+   	```
+
+[Back to Top](#codingwiki-project) :arrow_up:
+
+----
