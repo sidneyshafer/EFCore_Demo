@@ -3,6 +3,7 @@
 * [LINQ Query Methods](#linq-query-methods)
 * [Projections](#projections)
 * [IQueryable](#iqueryable)
+* [Loading of Related Data](#loading-of-related-data)
 * [CodingWiki EF Core Details](#codingwiki-ef-core-details)
 
 ## Entity Framework Core Overview
@@ -105,6 +106,17 @@ Projection is a way of converting an entity into a C# class with a subset of tho
 *	IQueryable interface inherits from IEnumerable.
 *	Anything you do with IEnumerable can be done with IQueryable.
 *	For example, when using IEnumerable in a query to retrieve a list of filtered records, the records are returned by the database and then filter is applied in memory (on client side). When using IQuerable in a query to retrieve a list of filtered records, the database filters and returns the records.
+
+## Loading of Related Data
+*	**Explicit Loading:** related data is loaded in a separate query.
+	*	More queries executed
+	*	Reference/Collection methods
+*	**Eager Loading:** related data is loaded in the initial query itself.
+	*	Single query execution
+	*	Include() / ThenInclude()
+*	**Lazy Loading:** related data is loaded when navigation property is accessed.
+	*	UseLazyLoadingProxies()
+	*	Virtual navigation properties
 
 [Back to Top](#codingwiki-project) :arrow_up:
 
