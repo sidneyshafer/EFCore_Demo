@@ -113,6 +113,7 @@ Projection is a way of converting an entity into a C# class with a subset of tho
 * [NuGet Packages](#nuget-packages)
 * [Db Context and Migrations](#db-context-and-migrations)
 * [Relations](#relations)
+* [Using Fluent API](#using-fluent-api)
 
 ### NuGet Packages
 EF Core NuGet packages used in **CodingWiki_DataAccess** project.
@@ -125,6 +126,7 @@ NuGet package in **CodingWiki_Web** project.
  	Microsoft.EntityFrameworkCore.Design
   ```
 
+----
 ### Db Context and Migrations
 
 **Add DbContext Class**
@@ -180,3 +182,67 @@ Override the OnConfiguring method of the DbContext class.
 
 ----
 ### Relations
+**One to One** – Book and BookDetail *(each book can only have one book detail, and each book detail can only have one book)*.
+* Add navigation and Id properties to the BookDetail class to refer to a Book entity as a foreign key.
+  ```csharp
+  [ForeignKey("Book")]
+  public int Book_Id { get; set; }
+  public Book Book { get; set; }
+  ```
+* Add a navigation property to the Book class to refer to BookDetail and establish a one-to-one relationship.
+  ```csharp
+  public BookDetail BookDetail { get; set; }
+  ```
+
+**One to Many** – Book and Publisher *(a publisher can publish multiple books, and a book can only have one publisher)*.
+* Add navigation and Id properties to the Book class to refer to a Publisher entity as a foreign key and establish a one-to-many relationship.
+  ```csharp
+  [ForeignKey("Publisher")]
+  public int Publisher_Id { get; set; }
+  public Publisher Publisher { get; set; }
+  ```
+* Add a collection of Book property to the Publisher class to retrieve a list of all Books a publisher has published based on the foreign key relation.
+  ```csharp
+  public List<Book> Books { get; set; }
+  ```
+  
+**Many to Many** – Automatic Mapping for Book and Author *(a book can have multiple authors, and authors can have multiple books)*.
+* Add navigation property to Author class, referring to the Book entity.
+  ```csharp
+  public List<Book> Books { get; set; }
+  ```
+* Add navigation property to Book class, referring to the Author entity.
+  ```csharp
+  public List<Author> Authors { get; set; }
+  ```
+	* *EF Core will automatically generate a mapping table between the Book and Author tables.*
+
+**Many to Many** – Manual Mapping for Book and Author.
+* Create a BookAuthorMap class that will act as the mapping class between Books and Authors.
+  ```csharp
+	public class BookAuthorMap
+	{
+	    [ForeignKey("Book")]
+	    public int Book_Id { get; set; }
+	    [ForeignKey("Author")]
+	    public int Author_Id { get; set; }
+	
+	    public Book Book { get; set; }
+	    public Author Author { get; set; }
+	}
+  ```
+* Modify the navigation property in the Book class to reference mapping class.
+  ```csharp
+  public List<BookAuthorMap> Authors { get; set; }
+  ```
+* Modify the navigation property in the Author class to reference mapping class.
+  ```csharp
+  public List<BookAuthorMap> Books { get; set; }
+  ```
+* Define a composite key for mapping class in the OnModelCreating method of application DbContext.
+  ```csharp
+  modelBuilder.Entity<BookAuthorMap>().HasKey(u => new { u.Author_Id, u.Book_Id });
+  ```
+
+----
+### Using Fluent API
