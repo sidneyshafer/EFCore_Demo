@@ -10,3 +10,4 @@ C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\refint\CodingWiki_Model.dll
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.pdb
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\ref\CodingWiki_Model.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Model\obj\Debug\net7.0\CodingWiki_Model.sourcelink.json

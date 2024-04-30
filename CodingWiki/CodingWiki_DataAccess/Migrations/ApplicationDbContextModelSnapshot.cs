@@ -135,7 +135,7 @@ namespace CodingWiki_DataAccess.Migrations
 
                     b.HasIndex("Book_Id");
 
-                    b.ToTable("BookAuthorMap");
+                    b.ToTable("BookAuthorMaps");
                 });
 
             modelBuilder.Entity("CodingWiki_Model.Models.BookDetail", b =>

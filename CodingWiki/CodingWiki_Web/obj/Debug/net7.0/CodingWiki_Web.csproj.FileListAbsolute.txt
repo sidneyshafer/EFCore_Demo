@@ -257,3 +257,6 @@ C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\obj\Debug\net7.0\r
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\obj\Debug\net7.0\CodingWiki_Web.pdb
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\obj\Debug\net7.0\CodingWiki_Web.genruntimeconfig.cache
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\obj\Debug\net7.0\ref\CodingWiki_Web.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\obj\Debug\net7.0\CodingWiki_Web.sourcelink.json
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll

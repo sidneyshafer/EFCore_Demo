@@ -107,3 +107,4 @@ C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Console\obj\Debug\net7
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Console\obj\Debug\net7.0\CodingWiki_Console.pdb
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Console\obj\Debug\net7.0\CodingWiki_Console.genruntimeconfig.cache
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Console\obj\Debug\net7.0\ref\CodingWiki_Console.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_Console\obj\Debug\net7.0\CodingWiki_Console.sourcelink.json

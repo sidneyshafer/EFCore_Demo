@@ -22,6 +22,7 @@ namespace CodingWiki_DataAccess.Data
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
         public DbSet<BookDetail> BookDetails { get; set; }
+        public DbSet<BookAuthorMap> BookAuthorMaps { get; set; }
 
         // Tables using Fluent API
         public DbSet<Fluent_BookDetail> BookDetails_fluent { get; set; }

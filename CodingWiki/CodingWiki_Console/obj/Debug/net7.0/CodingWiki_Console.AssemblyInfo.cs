@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodingWiki_Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59ad043a9f78abd8f908b5abb3bc3fc5afed3259")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodingWiki_Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodingWiki_Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

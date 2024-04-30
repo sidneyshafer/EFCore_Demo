@@ -15,3 +15,4 @@ C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\n
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.pdb
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.genruntimeconfig.cache
 C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\ref\CodingWiki_DataAccess.dll
+C:\Users\shafe\Projects\EFCore_Demo\CodingWiki\CodingWiki_DataAccess\obj\Debug\net7.0\CodingWiki_DataAccess.sourcelink.json
