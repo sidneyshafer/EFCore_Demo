@@ -259,7 +259,7 @@ Override the OnConfiguring method of the DbContext class.
 ----
 ### Using Fluent API
 
-CodingWiki presents the use of creating database entities using Fluent API. With this, we can define table and column names, set primary and foreign keys, specify certain column validation rules, and establish relationships between entities. The tables in this project are based off previously defined models. 
+CodingWiki presents the use of creating database entities using Fluent API. With this, we can define table and column names, set primary and foreign keys, specify certain column validation rules, and establish relationships between entities without using data annotation. The tables in this project are based off previously defined models. 
 
 **Add Fluent Models**
 *	Create fluent models that are based on the previously defined models (that use data annotation).
