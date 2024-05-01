@@ -288,7 +288,7 @@ CodingWiki presents the use of creating database entities using Fluent API. With
 The **CodingWiki_Console** project in this application works with data annotation models.
 
 **Database Helper Methods**
-*	In the **Program** file, create a new instance of the **ApplicationDbContext** class.
+*	In the **Program** file, create a new instance of **ApplicationDbContext**.
 *	On the database context object, methods are provided for working with database and migrations. Below are a few examples.
 
 |  |  |
@@ -296,5 +296,44 @@ The **CodingWiki_Console** project in this application works with data annotatio
 | EnsureCreated() | If the database does not exist, then it is created and the Entity Framework model is used to create the database schema. No action is taken if database and tables exist. |
 | GetPendingMigrations() | Retrieves all migrations that have not been applied to the database. |
 | Migrate() | Applies all pending migrations to the database. |
+
+**Logging Queries**
+*	To log executed queries on console app, add the following `LogTo()` method to the ApplicationDbContext class.
+*	```csharp
+	optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CodingWiki;TrustServerCertificate=True;Trusted_Connection=True;")
+	    .LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information);
+  	```
+
+**Using LINQ**
+*	Get the first Book record.
+	```csharp
+	Book book = context.Books.FirstOrDefault();
+  	```
+*	Get the first Book record that satisfies a query condition.
+	```csharp
+	var input = "Cookie Jar";
+	var book = context.Books.FirstOrDefault(u => u.Title == input);
+  	```
+*	Get a Book record that has a specific primary key value.
+	```csharp
+	var book = context.Books.Find(6);
+  	```
+*	Get a single Book that satisfy a specific condition.
+	```csharp
+	var book = context.Books.Single(u => u.ISBN == "123B12");
+	var book = context.Books.SingleOrDefault(u => u.Publisher_Id == 66);
+ 	```
+*	Get a list of Books that satisfy a specific condition.
+  	```csharp
+	var books = context.Books.Where(u => u.Publisher_Id == 3 && u.Price > 10);
+   	```
+*	Order a list of Books by title, and then by ISBN number.
+	```csharp
+	var books = context.Books.OrderBy(u => u.Title).ThenByDescending(u => u.ISBN);
+ 	```
+*	Use pagination methods to retrieve a list of two Books and skip the first two records.
+  	```csharp
+	var books = context.Books.Skip(2).Take(2);
+   	```
 
 ----
