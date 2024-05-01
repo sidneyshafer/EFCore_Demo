@@ -127,6 +127,7 @@ Projection is a way of converting an entity into a C# class with a subset of tho
 * [Relations](#relations)
 * [Using Fluent API](#using-fluent-api)
 * [EF Core in Console Project](#ef-core-in-console-project)
+* [EF Core in Web Project](#ef-core-in-web-project)
 
 ### NuGet Packages
 EF Core NuGet packages used in **CodingWiki_DataAccess** project.
@@ -335,5 +336,33 @@ The **CodingWiki_Console** project in this application works with data annotatio
   	```csharp
 	var books = context.Books.Skip(2).Take(2);
    	```
+
+----
+### EF Core in Web Project
+
+**Register Context & Configure Connection String**
+*	In the **Program** file, register the **ApplicationDbContext** to configure EF Core for Web project.
+	```csharp
+	builder.Services.AddDbContext<ApplicationDbContext>();
+ 	```
+*	In **appsettings**, add the database connection string.
+	```csharp
+	"ConnectionStrings": {
+	  "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=CodingWiki;TrustServerCertificate=True;Trusted_Connection=True;"
+	}
+ 	```
+*	Modify the database context on application builder to receive a connection string from **appsettings**.
+	```csharp
+	builder.Services.AddDbContext<ApplicationDbContext>(options =>
+	{
+	    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+	});
+ 	```
+*	Create a constructor in ApplicationDbContext that receives the options object and passes it to the base context class.
+	```csharp
+	public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+ 	```
+
+[Back to Top](#codingwiki-project) :arrow_up:
 
 ----
