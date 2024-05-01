@@ -126,6 +126,7 @@ Projection is a way of converting an entity into a C# class with a subset of tho
 * [Db Context and Migrations](#db-context-and-migrations)
 * [Relations](#relations)
 * [Using Fluent API](#using-fluent-api)
+* [EF Core in Console Project](#ef-core-in-console-project)
 
 ### NuGet Packages
 EF Core NuGet packages used in **CodingWiki_DataAccess** project.
@@ -280,5 +281,20 @@ CodingWiki presents the use of creating database entities using Fluent API. With
    	```
 
 [Back to Top](#codingwiki-project) :arrow_up:
+
+----
+### EF Core in Console Project
+
+The **CodingWiki_Console** project in this application works with data annotation models.
+
+**Database Helper Methods**
+*	In the **Program** file, create a new instance of the **ApplicationDbContext** class.
+*	On the database context object, methods are provided for working with database and migrations. Below are a few examples.
+
+|  |  |
+| --- | --- |
+| EnsureCreated() | If the database does not exist, then it is created and the Entity Framework model is used to create the database schema. No action is taken if database and tables exist. |
+| GetPendingMigrations() | Retrieves all migrations that have not been applied to the database. |
+| Migrate() | Applies all pending migrations to the database. |
 
 ----
